@@ -1,0 +1,247 @@
+$scale: 0.5
+
+$wallpaper_default: url("../images/wallpaper-00.png")
+$icon_default: url("../images/icon-template-white.png")
+
+$phone_width: 671px * $scale
+$phone_height: 1383px * $scale
+$phone_color: #0d0c08
+$phone_border_color: #76726b
+$phone_border_size: 16px * $scale
+
+$screen_width: 588px * $scale
+$screen_height: 1044px * $scale
+
+$phone_radius: ($phone_height - $screen_height) / 3.4
+
+$camera_size: 24px * $scale
+$camera_left: 208px * $scale
+$camera_top: 68px * $scale
+
+$speaker_width: 108px * $scale
+$speaker_height: 10px * $scale
+$speaker_top: 76px * $scale
+$speaker_color: #393631
+
+$notification_bar_width: 100%
+$notification_bar_height: 36px * $scale
+$notification_bar_time_font_size: 18px * $scale
+
+$shortcut_height: 148px * $scale
+
+$main_button: 110px * $scale
+$main_button_color: #4c4847
+$main_button_touch_id_scale: 0.925
+
+$application_margin_left: 41px * $scale
+$application_margin_top: 20px * $scale
+$application_height: 138px * $scale
+
+$icon_square_size: 96px * $scale
+$icon_border_radius: 22px * $scale
+$icon_label_font_size: 19px * $scale
+$icon_label_margin: 4px 0 * $scale
+
+$time_line_height: 30px * $scale
+
+$battery_width: 36px * $scale
+$battery_height: 12px * $scale
+$battery_margin_top: 9px * $scale
+$battery_margin_right: 8px * $scale
+
+$battery_block_small_width: 3px * $scale
+$battery_block_small_height: 8px * $scale
+$battery_block_small_margin_top: 3px * $scale
+$battery_block_small_border_with: 1px * $scale
+
+$opacity_default: 0.64
+
+body
+  font-family: Helvetica
+  margin: 0
+
+p
+  margin: 0
+  opacity: $opacity_default
+
+.calque
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0.5
+  width: $phone_width
+  height: $phone_height
+  background-image: url("../images/iphone6S.png")
+  background-size: contain
+  background-repeat: no-repeat
+
+.phone-border
+  position: relative
+  width: $phone_width
+  height: $phone_height
+  border-radius: $phone_radius
+  background-color: $phone_border_color
+
+.phone
+  position: absolute
+  left: $phone_border_size / 2
+  top: $phone_border_size / 2
+  width: $phone_width - $phone_border_size
+  height: $phone_height - $phone_border_size
+  border-radius: $phone_radius - $phone_border_size / 3
+  background-color: $phone_color
+
+.camera
+  position: absolute
+  background-color: $speaker_color
+  left: $camera_left
+  top: $camera_top
+  width: $camera_size
+  height: $camera_size
+  border-radius: $camera_size / 2
+
+.speaker
+  position: absolute
+  width: $speaker_width
+  height: $speaker_height
+  top: $speaker_top
+  left: 50%
+  border-radius: $speaker_height / 2
+  margin-left: -$speaker_width / 2
+  background-color: $speaker_color
+
+.screen
+  position: absolute
+  width: $screen_width
+  height: $screen_height
+  top: 50%
+  margin-top: -$screen_height / 2
+  left: 50%
+  margin-left: -$screen_width / 2
+  background-image: $wallpaper_default
+  background-size: contain
+  background-repeat: no-repeat
+
+.notification-bar
+  position: relative
+  width: $notification_bar_width
+  height: $notification_bar_height
+  .left
+    float: left
+    width: $notification_bar_width / 3
+    height: 100%
+  .center
+    float: left
+    width: $notification_bar_width / 3
+    height: 100%
+    &.time
+      text-align: center
+      font-size: $notification_bar_time_font_size
+      height: $notification_bar_height
+      p
+        margin: 0
+        line-height: $time_line_height
+        color: white
+        font-weight: lighter
+  .right
+    float: left
+    width: $notification_bar_width / 3
+    height: 100%
+    p
+      float: right
+      color: white
+      font-weight: lighter
+      margin-top: 4px * $scale
+      margin-right: 8px * $scale
+      font-size: 20px * $scale
+    .battery
+      height: $battery_height
+      margin-top: $battery_margin_top
+      margin-right: $battery_margin_right
+      float: right
+      opacity: $opacity_default
+      .block-large
+        width: $battery_width - $battery_block_small_width
+        height: 100%
+        border-style: solid
+        border-color: white
+        border-width: $battery_block_small_border_with
+        float: left
+        .charge
+          height: 100%
+          background-color: white
+          width: 0%
+      .block-small
+        width: $battery_block_small_width
+        height: $battery_block_small_height
+        background-color: white
+        float: left
+        margin-top: $battery_block_small_margin_top
+
+.phone .screen .shortcut
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: $shortcut_height
+  .blur
+    position: absolute
+    width: 100%
+    height: 100%
+
+.blur
+  overflow: hidden
+  display:block
+  background-color: #444444
+  // -webkit-filter: blur(16px)
+  // -moz-filter: blur(16px)
+  // -o-filter: blur(16px)
+  // -ms-filter: blur(16px)
+  // filter: blur(16px)
+  opacity: 0.75
+
+.main-button
+  position: absolute
+  width: $main_button
+  height: $main_button
+  left: 50%
+  margin-left: -$main_button / 2
+  border-radius: $main_button / 2
+  bottom: 2%
+  background-color: $main_button_color
+  .touch-id
+    position: absolute
+    width: $main_button * $main_button_touch_id_scale
+    height: $main_button * $main_button_touch_id_scale
+    top: 50%
+    margin-top: -$main_button / 2 * $main_button_touch_id_scale
+    left: 50%
+    margin-left: -$main_button / 2 * $main_button_touch_id_scale
+    border-radius: $main_button / 2 * $main_button_touch_id_scale
+    background-color: $phone_color
+
+.application
+  position: relative
+  float: left
+  width: $icon_square_size
+  margin-left: $application_margin_left
+  .icon
+    width: $icon_square_size
+    height: $icon_square_size
+    border-radius: $icon_border_radius
+    background-image: $icon_default
+    background-size: contain
+    background-repeat: no-repeat
+  p
+    color: white
+    font-size: $icon_label_font_size
+    text-align: center
+    margin: 4px 0
+    white-space: nowrap
+
+.icons .application
+  height: $application_height
+
+.shortcut .application
+  margin-top: $application_margin_top

@@ -1,0 +1,185 @@
+body {
+  font-family: Helvetica;
+  margin: 0; }
+
+p {
+  margin: 0;
+  opacity: 0.64; }
+
+.calque {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  width: 335.5px;
+  height: 691.5px;
+  background-image: url("../images/iphone6S.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.phone-border {
+  position: relative;
+  width: 335.5px;
+  height: 691.5px;
+  border-radius: 49.85294px;
+  background-color: #76726b; }
+
+.phone {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 327.5px;
+  height: 683.5px;
+  border-radius: 47.18627px;
+  background-color: #0d0c08; }
+
+.camera {
+  position: absolute;
+  background-color: #393631;
+  left: 104px;
+  top: 34px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px; }
+
+.speaker {
+  position: absolute;
+  width: 54px;
+  height: 5px;
+  top: 38px;
+  left: 50%;
+  border-radius: 2.5px;
+  margin-left: -27px;
+  background-color: #393631; }
+
+.screen {
+  position: absolute;
+  width: 294px;
+  height: 522px;
+  top: 50%;
+  margin-top: -261px;
+  left: 50%;
+  margin-left: -147px;
+  background-image: url("../images/wallpaper-00.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.notification-bar {
+  position: relative;
+  width: 100%;
+  height: 18px; }
+  .notification-bar .left {
+    float: left;
+    width: 33.33333%;
+    height: 100%; }
+  .notification-bar .center {
+    float: left;
+    width: 33.33333%;
+    height: 100%; }
+    .notification-bar .center.time {
+      text-align: center;
+      font-size: 9px;
+      height: 18px; }
+      .notification-bar .center.time p {
+        margin: 0;
+        line-height: 15px;
+        color: white;
+        font-weight: lighter; }
+  .notification-bar .right {
+    float: left;
+    width: 33.33333%;
+    height: 100%; }
+    .notification-bar .right p {
+      float: right;
+      color: white;
+      font-weight: lighter;
+      margin-top: 2px;
+      margin-right: 4px;
+      font-size: 10px; }
+    .notification-bar .right .battery {
+      height: 6px;
+      margin-top: 4.5px;
+      margin-right: 4px;
+      float: right;
+      opacity: 0.64; }
+      .notification-bar .right .battery .block-large {
+        width: 16.5px;
+        height: 100%;
+        border-style: solid;
+        border-color: white;
+        border-width: 0.5px;
+        float: left; }
+        .notification-bar .right .battery .block-large .charge {
+          height: 100%;
+          background-color: white;
+          width: 0%; }
+      .notification-bar .right .battery .block-small {
+        width: 1.5px;
+        height: 4px;
+        background-color: white;
+        float: left;
+        margin-top: 1.5px; }
+
+.phone .screen .shortcut {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 74px; }
+  .phone .screen .shortcut .blur {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+
+.blur {
+  overflow: hidden;
+  background-color: #444444;
+  opacity: 0.75; }
+
+.main-button {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 50%;
+  margin-left: -27.5px;
+  border-radius: 27.5px;
+  bottom: 2%;
+  background-color: #4c4847; }
+  .main-button .touch-id {
+    position: absolute;
+    width: 50.875px;
+    height: 50.875px;
+    top: 50%;
+    margin-top: -25.4375px;
+    left: 50%;
+    margin-left: -25.4375px;
+    border-radius: 25.4375px;
+    background-color: #0d0c08; }
+
+.application {
+  position: relative;
+  float: left;
+  width: 48px;
+  margin-left: 20.5px; }
+  .application .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 11px;
+    background-image: url("../images/icon-template-white.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .application p {
+    color: white;
+    font-size: 9.5px;
+    text-align: center;
+    margin: 4px 0;
+    white-space: nowrap; }
+
+.icons .application {
+  height: 69px; }
+
+.shortcut .application {
+  margin-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */
