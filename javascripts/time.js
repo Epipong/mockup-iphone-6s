@@ -24,7 +24,7 @@
         angle: (seconds * 6)
       }
     ];
-});
+
     for(var j = 0; j < hands.length; j++) {
       var elements = document.querySelectorAll('.' + hands[j].hand);
       for(var k = 0; k < elements.length; k++) {
