@@ -46,7 +46,7 @@
 				updateTime();
 			});
 
-			function updateTime(){
+			function updateTime() {
 				var dt = dateFilter(new Date(), format);
 				element.text(dt);
 			}

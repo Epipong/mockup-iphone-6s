@@ -5,14 +5,14 @@
   <div class="center time" ng-controller="TimeController as time">
     <p current-time="format"></p>
   </div>
-  <div class="right" ng-controller="BatteryController as battery">
+  <div class="right" ng-controller="BatteryController">
     <div class="battery">
       <div class="block-large">
-        <div class="charge" ng-style="{'width': '{{ battery.currentBattery }}%'}"></div>
+        <div class="charge" style="width: {{ level }}%"></div>
       </div>
       <div class="block-small"></div>
     </div>
-    <p>{{ battery.currentBattery }}%</p>
+    <p>{{ level }}% {{ status }}</p>
   </div>
 </div>
 <!-- End of notification bar -->

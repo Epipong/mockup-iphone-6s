@@ -12,55 +12,55 @@ p {
   top: 0;
   left: 0;
   opacity: 0.5;
-  width: 335.5px;
-  height: 691.5px;
+  width: 671px;
+  height: 1383px;
   background-image: url("../images/iphone6S.png");
   background-size: contain;
   background-repeat: no-repeat; }
 
 .phone-border {
   position: relative;
-  width: 335.5px;
-  height: 691.5px;
-  border-radius: 49.85294px;
+  width: 671px;
+  height: 1383px;
+  border-radius: 99.70588px;
   background-color: #76726b; }
 
 .phone {
   position: absolute;
-  left: 4px;
-  top: 4px;
-  width: 327.5px;
-  height: 683.5px;
-  border-radius: 47.18627px;
+  left: 8px;
+  top: 8px;
+  width: 655px;
+  height: 1367px;
+  border-radius: 94.37255px;
   background-color: #0d0c08; }
 
 .camera {
   position: absolute;
   background-color: #393631;
-  left: 104px;
-  top: 34px;
-  width: 12px;
-  height: 12px;
-  border-radius: 6px; }
+  left: 208px;
+  top: 68px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px; }
 
 .speaker {
   position: absolute;
-  width: 54px;
-  height: 5px;
-  top: 38px;
+  width: 108px;
+  height: 10px;
+  top: 76px;
   left: 50%;
-  border-radius: 2.5px;
-  margin-left: -27px;
+  border-radius: 5px;
+  margin-left: -54px;
   background-color: #393631; }
 
 .screen {
   position: absolute;
-  width: 294px;
-  height: 522px;
+  width: 588px;
+  height: 1044px;
   top: 50%;
-  margin-top: -261px;
+  margin-top: -522px;
   left: 50%;
-  margin-left: -147px;
+  margin-left: -294px;
   background-image: url("../images/wallpaper-00.png");
   background-size: contain;
   background-repeat: no-repeat; }
@@ -68,7 +68,7 @@ p {
 .notification-bar {
   position: relative;
   width: 100%;
-  height: 18px; }
+  height: 36px; }
   .notification-bar .left {
     float: left;
     width: 33.33333%;
@@ -79,11 +79,11 @@ p {
     height: 100%; }
     .notification-bar .center.time {
       text-align: center;
-      font-size: 9px;
-      height: 18px; }
+      font-size: 18px;
+      height: 36px; }
       .notification-bar .center.time p {
         margin: 0;
-        line-height: 15px;
+        line-height: 30px;
         color: white;
         font-weight: lighter; }
   .notification-bar .right {
@@ -94,39 +94,39 @@ p {
       float: right;
       color: white;
       font-weight: lighter;
-      margin-top: 2px;
-      margin-right: 4px;
-      font-size: 10px; }
+      margin-top: 4px;
+      margin-right: 8px;
+      font-size: 20px; }
     .notification-bar .right .battery {
-      height: 6px;
-      margin-top: 4.5px;
-      margin-right: 4px;
+      height: 12px;
+      margin-top: 9px;
+      margin-right: 8px;
       float: right;
       opacity: 0.64; }
       .notification-bar .right .battery .block-large {
-        width: 16.5px;
+        width: 33px;
         height: 100%;
         border-style: solid;
         border-color: white;
-        border-width: 0.5px;
+        border-width: 1px;
         float: left; }
         .notification-bar .right .battery .block-large .charge {
           height: 100%;
           background-color: white;
           width: 0%; }
       .notification-bar .right .battery .block-small {
-        width: 1.5px;
-        height: 4px;
+        width: 3px;
+        height: 8px;
         background-color: white;
         float: left;
-        margin-top: 1.5px; }
+        margin-top: 3px; }
 
 .phone .screen .shortcut {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 74px; }
+  height: 148px; }
   .phone .screen .shortcut .blur {
     position: absolute;
     width: 100%;
@@ -139,48 +139,48 @@ p {
 
 .main-button {
   position: absolute;
-  width: 55px;
-  height: 55px;
+  width: 110px;
+  height: 110px;
   left: 50%;
-  margin-left: -27.5px;
-  border-radius: 27.5px;
+  margin-left: -55px;
+  border-radius: 55px;
   bottom: 2%;
   background-color: #4c4847; }
   .main-button .touch-id {
     position: absolute;
-    width: 50.875px;
-    height: 50.875px;
+    width: 101.75px;
+    height: 101.75px;
     top: 50%;
-    margin-top: -25.4375px;
+    margin-top: -50.875px;
     left: 50%;
-    margin-left: -25.4375px;
-    border-radius: 25.4375px;
+    margin-left: -50.875px;
+    border-radius: 50.875px;
     background-color: #0d0c08; }
 
 .application {
   position: relative;
   float: left;
-  width: 48px;
-  margin-left: 20.5px; }
+  width: 96px;
+  margin-left: 41px; }
   .application .icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 11px;
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
     background-image: url("../images/icon-template-white.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: relative; }
   .application p {
     color: white;
-    font-size: 9.5px;
+    font-size: 19px;
     text-align: center;
     margin: 4px 0;
     white-space: nowrap; }
 
 .icons .application {
-  height: 69px; }
+  height: 138px; }
 
 .shortcut .application {
-  margin-top: 10px; }
+  margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
