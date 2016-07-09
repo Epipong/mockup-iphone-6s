@@ -1,7 +1,4 @@
-$scale: 0.5
-
-$wallpaper_default: url("../images/wallpaper-00.png")
-$icon_default: url("../images/icon-template-white.png")
+@import "config"
 
 $phone_width: 671px * $scale
 $phone_height: 1383px * $scale
@@ -53,8 +50,6 @@ $battery_block_small_width: 3px * $scale
 $battery_block_small_height: 8px * $scale
 $battery_block_small_margin_top: 3px * $scale
 $battery_block_small_border_with: 1px * $scale
-
-$opacity_default: 0.64
 
 body
   font-family: Helvetica
@@ -233,6 +228,7 @@ p
     background-image: $icon_default
     background-size: contain
     background-repeat: no-repeat
+    position: relative
   p
     color: white
     font-size: $icon_label_font_size
