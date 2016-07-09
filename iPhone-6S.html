@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="views/icons/clock/clock.css" rel="stylesheet">
 
   <script type="text/javascript" src="javascripts/angular.js"></script>
   <script type="text/javascript" src="javascripts/app.js"></script>
@@ -24,43 +25,7 @@
 
       <!-- Screen render -->
       <div class="screen">
-        <!-- Notification bar -->
-        <div class="notification-bar">
-          <div class="left">
-          </div>
-          <div class="center time" ng-controller="TimeController as time">
-            <p current-time="format"></p>
-          </div>
-          <div class="right" ng-controller="BatteryController as battery">
-            <div class="battery">
-              <div class="block-large">
-                <div class="charge" ng-style="{'width': '{{ battery.currentBattery }}%'}"></div>
-              </div>
-              <div class="block-small"></div>
-            </div>
-            <p>{{ battery.currentBattery }}%</p>
-          </div>
-        </div>
-        <!-- End of notification bar -->
-
-        <!-- Icons -->
-        <div class="icons" ng-controller="ApplicationController as app">
-          <div class="application" ng-repeat="application in app.applications">
-            <div id="{{ application.name.toLowerCase() }}" class="icon" ng-style="application.logo && {'background-image': 'url({{ application.logo }})'}"></div>
-            <p>{{ application.name }}</p>
-          </div>
-        </div>
-        <!-- End of icons -->
-
-        <!-- Shortcut icon -->
-        <div class="shortcut" ng-controller="ApplicationController as app">
-          <div class="blur"></div>
-          <div class="application" ng-repeat="shortcut in app.shortcuts">
-            <div id="{{ shortcut.name.toLowerCase() }}" class="icon" ng-style="shortcut.logo && {'background-image': 'url({{ shortcut.logo }})'}"></div>
-            <p>{{ shortcut.name }}</p>
-          </div>
-        </div>
-        <!-- End of shortcut icon -->
+        <div ng-include="'views/main.htm'"></div>
       </div>
       <!-- End of screen render -->
 
