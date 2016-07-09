@@ -6,10 +6,14 @@
 
     $scope.level;
     $scope.status;
+    $scope.status_image = "images/status_charge.png";
 
     var setBatteryLevel = function(level, callback) {
-      $scope.level = level * 100;
-      console.log($scope.level);
+      if (level !== NOT_APPLICABLE) {
+        $scope.level = parseInt(level * 100);
+      } else {
+        $scope.level = 100;
+      }
 
       if (callback && typeof(callback) === "function") {
         callback();
@@ -18,8 +22,11 @@
     };
 
     var setChargingStatus = function(status, callback) {
-      $scope.status = status;
-      console.log($scope.status);
+      if (status !== NOT_APPLICABLE) {
+        $scope.status = status;
+      } else {
+        $scope.status = true;
+      }
 
       if (callback && typeof(callback) === "function") {
         callback();
@@ -34,16 +41,12 @@
 
         battery.onlevelchange = function(evt) {
           var _level = battery.level;
-          setBatteryLevel(_level, function() {
-            console.log("Battery level changed: " + _level, battery);
-          });
+          setBatteryLevel(_level);
         };
 
         battery.onchargingchange = function(evt) {
           var _charging = battery.charging;
-            setChargingStatus(_charging, function() {
-            console.log("Battery charging status changed: " + _charging, battery);
-          });
+            setChargingStatus(_charging);
         }
       });
     }

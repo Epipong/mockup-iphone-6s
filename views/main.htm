@@ -1,20 +1,5 @@
 <!-- Notification bar -->
-<div class="notification-bar">
-  <div class="left">
-  </div>
-  <div class="center time" ng-controller="TimeController as time">
-    <p current-time="format"></p>
-  </div>
-  <div class="right" ng-controller="BatteryController">
-    <div class="battery">
-      <div class="block-large">
-        <div class="charge" style="width: {{ level }}%"></div>
-      </div>
-      <div class="block-small"></div>
-    </div>
-    <p>{{ level }}% {{ status }}</p>
-  </div>
-</div>
+<div ng-include="'views/notification-bar.htm'"></div>
 <!-- End of notification bar -->
 
 <!-- Icons -->

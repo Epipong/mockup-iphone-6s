@@ -87,9 +87,9 @@ p {
         color: white;
         font-weight: lighter; }
   .notification-bar .right {
-    float: left;
-    width: 33.33333%;
-    height: 100%; }
+    float: right;
+    height: 100%;
+    margin-right: 8px; }
     .notification-bar .right p {
       float: right;
       color: white;
@@ -100,7 +100,6 @@ p {
     .notification-bar .right .battery {
       height: 12px;
       margin-top: 9px;
-      margin-right: 8px;
       float: right;
       opacity: 0.64; }
       .notification-bar .right .battery .block-large {
@@ -120,6 +119,13 @@ p {
         background-color: white;
         float: left;
         margin-top: 3px; }
+    .notification-bar .right .battery-status {
+      width: 6px;
+      height: 14px;
+      margin-top: 9px;
+      margin-left: 2px;
+      float: right;
+      opacity: 0.64; }
 
 .phone .screen .shortcut {
   position: absolute;
