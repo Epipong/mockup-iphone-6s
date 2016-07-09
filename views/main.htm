@@ -1,0 +1,37 @@
+<!-- Notification bar -->
+<div class="notification-bar">
+  <div class="left">
+  </div>
+  <div class="center time" ng-controller="TimeController as time">
+    <p current-time="format"></p>
+  </div>
+  <div class="right" ng-controller="BatteryController as battery">
+    <div class="battery">
+      <div class="block-large">
+        <div class="charge" ng-style="{'width': '{{ battery.currentBattery }}%'}"></div>
+      </div>
+      <div class="block-small"></div>
+    </div>
+    <p>{{ battery.currentBattery }}%</p>
+  </div>
+</div>
+<!-- End of notification bar -->
+
+<!-- Icons -->
+<div class="icons" ng-controller="ApplicationController as item">
+  <div class="application" ng-repeat="application in item.applications">
+    <div ng-include="application.icon"></div>
+    <p>{{ application.name }}</p>
+  </div>
+</div>
+<!-- End of icons -->
+
+<!-- Shortcut icon -->
+<div class="shortcut" ng-controller="ApplicationController as item">
+  <div class="blur"></div>
+  <div class="application" ng-repeat="application in item.shortcuts">
+    <div ng-include="application.icon"></div>
+    <p>{{ application.name }}</p>
+  </div>
+</div>
+<!-- End of shortcut icon -->
