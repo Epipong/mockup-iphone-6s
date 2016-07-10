@@ -55,7 +55,7 @@
       logo: "images/ios-calendar.png",
       notifications: 0,
       built_in: true,
-      icon: "views/icons/default.htm",
+      icon: "views/icons/calendar/calendar.htm",
     },
     {
       name: "Photos",
@@ -153,6 +153,13 @@
       logo: "images/ios-settings.png",
       notifications: 0,
       built_in: true,
+      icon: "views/icons/default.htm",
+    },
+    {
+      name: "Teysser",
+      logo: "images/ios-teysser.png",
+      notifications: 0,
+      built_in: false,
       icon: "views/icons/default.htm",
     },
   ];
