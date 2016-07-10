@@ -9,8 +9,8 @@
   position: relative;
   width: 85%;
   height: 85%;
-  margin: auto;
-  top: 7px;
+  top: 7.5px;
+  left: 7.5px;
   opacity: 0.9; }
 
 .clock.simple:after {
@@ -25,19 +25,6 @@
   height: 5%;
   z-index: 10; }
 
-.clock.simple:before {
-  background: black;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 6%;
-  height: 6%;
-  z-index: 0; }
-
 .minutes-container, .hours-container, .seconds-container {
   position: absolute;
   top: 0;
@@ -50,9 +37,9 @@
   position: absolute;
   border-radius: 85%/10%;
   width: 2%;
-  height: 20%;
+  height: 21%;
   left: 49%;
-  top: 30%;
+  top: 28%;
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%; }
 
@@ -70,9 +57,7 @@
 .seconds {
   background: red;
   position: absolute;
-  z-index: 8; }
-
-.seconds {
+  z-index: 8;
   border-radius: 200%/10%;
   height: 30%;
   left: 49.5%;

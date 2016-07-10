@@ -1,0 +1,17 @@
+<div class="notification-bar">
+  <div class="left">
+  </div>
+  <div class="center time" ng-controller="TimeController as time">
+    <p current-time="format"></p>
+  </div>
+  <div class="right" ng-controller="BatteryController">
+    <img class="battery-status" ng-show="status" ng-src="{{ status_image }}">
+    <div class="battery">
+      <div class="block-large">
+        <div class="charge" style="width: {{ level }}%; background-color: {{ background_color }}"></div>
+      </div>
+      <div class="block-small"></div>
+    </div>
+    <p>{{ level }}%</p>
+  </div>
+</div>

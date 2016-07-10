@@ -140,9 +140,9 @@ p
         color: white
         font-weight: lighter
   .right
-    float: left
-    width: $notification_bar_width / 3
+    float: right
     height: 100%
+    margin-right: 8px * $scale
     p
       float: right
       color: white
@@ -153,7 +153,7 @@ p
     .battery
       height: $battery_height
       margin-top: $battery_margin_top
-      margin-right: $battery_margin_right
+      // margin-right: $battery_margin_right
       float: right
       opacity: $opacity_default
       .block-large
@@ -173,6 +173,13 @@ p
         background-color: white
         float: left
         margin-top: $battery_block_small_margin_top
+    .battery-status
+      width: 8px * $scale
+      height: 14px * $scale
+      margin-top: 9px * $scale
+      margin-left: 2px * $scale
+      float: right
+      opacity: $opacity_default
 
 .phone .screen .shortcut
   position: absolute
