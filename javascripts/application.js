@@ -155,6 +155,13 @@
       built_in: true,
       icon: "views/icons/default.htm",
     },
+    {
+      name: "Teysser",
+      logo: "images/ios-teysser.png",
+      notifications: 0,
+      built_in: false,
+      icon: "views/icons/default.htm",
+    },
   ];
 
 })();
