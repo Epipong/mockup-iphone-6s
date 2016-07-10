@@ -55,7 +55,7 @@
       logo: "images/ios-calendar.png",
       notifications: 0,
       built_in: true,
-      icon: "views/icons/default.htm",
+      icon: "views/icons/calendar/calendar.htm",
     },
     {
       name: "Photos",

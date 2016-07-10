@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  src: url("fonts/HelveticaNeue/HelveticaNeue-UltraLight.otf"); }
+#calendar {
+  background-color: white;
+  background-image: none;
+  position: relative; }
+
+.calendar div.weekday {
+  color: #ff2d55;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 38px;
+  font-family: "Helvetica Neue";
+  font-weight: 200; }
+.calendar div.day {
+  color: black;
+  font-size: 64px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 38px;
+  font-family: "Helvetica Neue";
+  font-weight: lighter; }
+
+/*# sourceMappingURL=calendar.css.map */
