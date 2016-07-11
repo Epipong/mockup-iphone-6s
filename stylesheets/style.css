@@ -23,7 +23,7 @@ p {
   width: 671px;
   height: 1383px;
   border-radius: 99.70588px;
-  background-color: #76726b; }
+  background-color: #8e8e93; }
 
 .phone {
   position: absolute;
@@ -140,6 +140,7 @@ p {
 
 .blur {
   overflow: hidden;
+  display: block;
   background-color: #444444;
   opacity: 0.75; }
 
@@ -151,7 +152,7 @@ p {
   margin-left: -55px;
   border-radius: 55px;
   bottom: 2%;
-  background-color: #4c4847; }
+  background-color: #8e8e93; }
   .main-button .touch-id {
     position: absolute;
     width: 101.75px;
@@ -180,7 +181,10 @@ p {
     color: white;
     font-size: 19px;
     text-align: center;
-    margin: 4px 0;
+    margin-top: 4px;
+    margin-right: 0;
+    margin-bottom: 4px;
+    margin-left: 0;
     white-space: nowrap; }
 
 .icons .application {

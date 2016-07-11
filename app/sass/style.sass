@@ -3,7 +3,7 @@
 $phone_width: 671px * $scale
 $phone_height: 1383px * $scale
 $phone_color: #0d0c08
-$phone_border_color: #76726b
+$phone_border_color: $grey
 $phone_border_size: 16px * $scale
 
 $screen_width: 588px * $scale
@@ -27,7 +27,7 @@ $notification_bar_time_font_size: 18px * $scale
 $shortcut_height: 148px * $scale
 
 $main_button: 110px * $scale
-$main_button_color: #4c4847
+$main_button_color: $grey
 $main_button_touch_id_scale: 0.925
 
 $application_margin_left: 41px * $scale
@@ -194,7 +194,7 @@ p
 
 .blur
   overflow: hidden
-  display:block
+  display: block
   background-color: #444444
   // -webkit-filter: blur(16px)
   // -moz-filter: blur(16px)
@@ -240,7 +240,10 @@ p
     color: white
     font-size: $icon_label_font_size
     text-align: center
-    margin: 4px 0 * $scale
+    margin-top: 4px * $scale
+    margin-right: 0
+    margin-bottom: 4px * $scale
+    margin-left: 0
     white-space: nowrap
 
 .icons .application
