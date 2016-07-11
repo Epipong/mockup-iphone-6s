@@ -1,25 +1,18 @@
 (function() {
   var app = angular.module('network', []);
 
-  app.controller('NetworkController', function() {
-    this.operatorName = null;
-    this.currentNetworkBar = 0;
-    this.isWifiConnected = false;
-
-    this.setCurrentNetworkBar = function(currentNetworkBar) {
-      if (isNaN(currentNetworkBar))
-        return ;
-      this.currentNetworkBar = parseInt(currentNetworkBar);
+  app.controller('NetworkController', ['$scope', function($scope) {
+    $scope.connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    if ($scope.connection == null) {
+      console.log('scope connection undefined');
+      return ;
     }
-    this.hasNetwork = function() {
-      return this.currentNetworkBar !== 0;
+    $scope.type = $scope.connection.type;
+
+    var updateConnectionStatus = function() {
+      console.log("Connection type is change from " + $scope.type + " to " + $scope.connection.type);
     }
 
-    this.setWifiConnected = function(isWifiConnected) {
-      this.isWifiConnected = isWifiConnected;
-    }
-    this.hasWifi = function() {
-      return this.isWifiConnected;
-    }
-  });
+    connection.addEventListener('typechange', updateConnectionStatus);
+  }]);
 })();
