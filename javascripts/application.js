@@ -156,6 +156,13 @@
       icon: "views/icons/default.htm",
     },
     {
+      name: "Calculator",
+      logo: "images/ios-calculator.png",
+      notifications: 0,
+      built_in: true,
+      icon: "views/icons/default.htm",
+    },
+    {
       name: "Teysser",
       logo: "images/ios-teysser.png",
       notifications: 0,
