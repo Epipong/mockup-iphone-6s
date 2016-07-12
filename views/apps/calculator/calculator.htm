@@ -1,27 +1,27 @@
-<div class="calculator">
+<div class="calculator" ng-controller="CalculatorController as calculator">
     <div ng-include="'views/notification-bar.htm'"></div>
     <div class="display">
-        <div class="input_result">0</div>
+        <div class="input_result">{{ calculator.display }}</div>
     </div>
     <div class="content">
-        <div class="key misc" id="clearall">AC</div>
-        <div class="key misc b-left" id="changeSign"><sup>+</sup>/<sub>-</sub></div>
-        <div class="key misc b-left" id="percentage">%</div>
-        <div class="key op operator b-left">/</div>
-        <div class="key num b-top">7</div>
-        <div class="key num b-left b-top">8</div>
-        <div class="key num b-left b-top">9</div>
-        <div class="key op operator b-left b-top">*</div>
-        <div class="key num b-top">4</div>
-        <div class="key num b-left b-top">5</div>
-        <div class="key num b-left b-top">6</div>
-        <div class="key op operator b-left b-top">-</div>
-        <div class="key num b-top">1</div>
-        <div class="key num b-left b-top">2</div>
-        <div class="key num b-left b-top">3</div>
-        <div class="key op operator b-left b-top">+</div>
-        <div class="key num wide b-top b-bottom-left-radius">0</div>
-        <div class="key num b-left b-top">.</div>
-        <div class="key op b-left b-top b-bottom-right-radius equal" id="equal">=</div>
+        <div class="key misc" id="clearall" ng-click="calculator.clearall()">AC</div>
+        <div class="key misc b-left" id="changeSign" ng-click="calculator.changeSign()">+/-</div>
+        <div class="key misc b-left" id="percentage" ng-click="calculator.getPercentage()">%</div>
+        <div class="key op operator b-left" ng-click="calculator.getOp('/')">/</div>
+        <div class="key num b-top" ng-click="calculator.getNum('7')">7</div>
+        <div class="key num b-left b-top" ng-click="calculator.getNum('8')">8</div>
+        <div class="key num b-left b-top" ng-click="calculator.getNum('9')">9</div>
+        <div class="key op operator b-left b-top" ng-click="calculator.getOp('*')">*</div>
+        <div class="key num b-top" ng-click="calculator.getNum('4')">4</div>
+        <div class="key num b-left b-top" ng-click="calculator.getNum('5')">5</div>
+        <div class="key num b-left b-top" ng-click="calculator.getNum('6')">6</div>
+        <div class="key op operator b-left b-top" ng-click="calculator.getOp('-')">-</div>
+        <div class="key num b-top" ng-click="calculator.getNum('1')">1</div>
+        <div class="key num b-left b-top" ng-click="calculator.getNum('2')">2</div>
+        <div class="key num b-left b-top" ng-click="calculator.getNum('3')">3</div>
+        <div class="key op operator b-left b-top" ng-click="calculator.getOp('+')">+</div>
+        <div class="key num wide b-top b-bottom-left-radius" ng-click="calculator.getNum(0)">0</div>
+        <div class="key num b-left b-top" ng-click="calculator.getNum('.')">.</div>
+        <div class="key op b-left b-top b-bottom-right-radius equal" id="equal" ng-click="calculator.equal()">=</div>
     </div>
 </div>

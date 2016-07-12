@@ -4,7 +4,6 @@
   app.controller('NetworkController', ['$scope', function($scope) {
     $scope.connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     if ($scope.connection == null) {
-      console.log('scope connection undefined');
       return ;
     }
     $scope.type = $scope.connection.type;
