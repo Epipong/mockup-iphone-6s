@@ -10,8 +10,13 @@
   <link href="views/icons/clock/clock.css" rel="stylesheet">
   <link href="views/icons/calendar/calendar.css" rel="stylesheet">
 
+  <link href="views/apps/calculator/calculator.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="views/apps/calculator/calculator.js"></script>
+
   <script type="text/javascript" src="javascripts/angular.js"></script>
   <script type="text/javascript" src="javascripts/app.js"></script>
+  <script type="text/javascript" src="javascripts/screen.js"></script>
   <script type="text/javascript" src="javascripts/application.js"></script>
   <script type="text/javascript" src="javascripts/network.js"></script>
   <script type="text/javascript" src="javascripts/time.js"></script>
@@ -21,19 +26,17 @@
 
 <body>
   <div class="phone-border">
-    <div class="phone">
+    <div class="phone" ng-controller="ScreenController as screen">
       <div class="camera front"></div>
       <div class="speaker"></div>
 
       <!-- Screen render -->
-      <div class="screen">
-        <div ng-include="'views/main.htm'"></div>
-      </div>
+      <div class="screen" ng-include="screen.current"></div>
       <!-- End of screen render -->
 
       <!-- Home button -->
       <div class="main-button">
-        <div class="touch-id"></div>
+        <a ng-click="screen.setCurrentScreen('views/main.htm');"><div class="touch-id"></div></a>
       </div>
       <!-- End of home button -->
     </div>

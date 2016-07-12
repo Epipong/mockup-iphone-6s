@@ -6,9 +6,6 @@ $phone_color: #0d0c08
 $phone_border_color: $grey
 $phone_border_size: 16px * $scale
 
-$screen_width: 588px * $scale
-$screen_height: 1044px * $scale
-
 $phone_radius: ($phone_height - $screen_height) / 3.4
 
 $camera_size: 24px * $scale
@@ -114,9 +111,10 @@ p
   margin-top: -$screen_height / 2
   left: 50%
   margin-left: -$screen_width / 2
-  background-image: $wallpaper_default
   background-size: contain
   background-repeat: no-repeat
+  &.main
+    background-image: $wallpaper_default
 
 .notification-bar
   position: relative

@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  src: url("../../../fonts/HelveticaNeue/HelveticaNeue-UltraLight.otf"); }
+/* MAIN */
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  min-height: 100%; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica Ultra Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 26px; }
+
+.calculator .notification-bar {
+  background-color: rgba(51, 51, 51, 0.8); }
+
+.calculator {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+/* SCREEN */
+.calculator .display {
+  width: 100%;
+  height: 29%;
+  background-color: rgba(51, 51, 51, 0.8);
+  text-align: right;
+  position: relative;
+  overflow: hidden; }
+
+.input_result {
+  background-color: transparent;
+  width: 97%;
+  font-size: 57.5px;
+  color: #fff;
+  text-align: right;
+  border: none;
+  padding-top: 24%; }
+
+/* BUTTONS */
+.key {
+  float: left;
+  vertical-align: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  height: 69px;
+  line-height: 64px;
+  background-color: #e4e4e4;
+  cursor: pointer; }
+  .key:hover {
+    background-color: #f2f2f2; }
+  .key:active {
+    background: rgba(255, 255, 255, 0.8); }
+  .key.b-left {
+    border-left: 1px solid #afafaf;
+    width: 72.5px; }
+
+.misc {
+  background-color: #d5d5d5; }
+
+.op {
+  background-color: #f68f24;
+  color: #fff; }
+  .op:hover {
+    background-color: #ffae59; }
+  .op:active {
+    background: rgba(255, 255, 255, 0.2); }
+
+.wide {
+  width: 147px; }
+
+/* BORDERS */
+.b-left {
+  border-left: 1px solid #afafaf; }
+
+.b-top {
+  border-top: 1px solid #afafaf; }
+
+/*# sourceMappingURL=calculator.css.map */

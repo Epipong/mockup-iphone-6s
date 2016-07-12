@@ -1,11 +1,11 @@
 (function() {
-  var app = angular.module('application', []);
+  var app = angular.module('application', ['screen']);
 
   app.controller('ApplicationController', function() {
     this.applications = applications;
     this.shortcuts = shortcuts;
 
-    this.addNewApplication = function(app_name, app_logo) {
+    this.addApplication = function(app_name, app_logo) {
       this.applications.push({name: app_name, logo: app_logo, notifications: 0,
         built_in: false});
     };
@@ -18,6 +18,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Mail",
@@ -25,6 +26,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Safari",
@@ -32,6 +34,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Music",
@@ -39,6 +42,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
   ];
 
@@ -49,6 +53,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Calendar",
@@ -56,6 +61,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/calendar/calendar.htm",
+      path: "",
     },
     {
       name: "Photos",
@@ -63,6 +69,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Camera",
@@ -70,6 +77,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Weather",
@@ -77,6 +85,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Clock",
@@ -84,6 +93,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/clock/clock.htm",
+      path: "",
     },
     {
       name: "Maps",
@@ -91,6 +101,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Videos",
@@ -98,6 +109,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Notes",
@@ -105,6 +117,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Reminders",
@@ -112,6 +125,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Stocks",
@@ -119,6 +133,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "iTune Store",
@@ -126,6 +141,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "App Store",
@@ -133,6 +149,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "iBooks",
@@ -140,6 +157,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Health",
@@ -147,6 +165,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Settings",
@@ -154,6 +173,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "",
     },
     {
       name: "Calculator",
@@ -161,6 +181,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
+      path: "views/apps/calculator/calculator.htm",
     },
     {
       name: "Teysser",
@@ -168,6 +189,7 @@
       notifications: 0,
       built_in: false,
       icon: "views/icons/default.htm",
+      path: "",
     },
   ];
 
