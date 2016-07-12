@@ -123,7 +123,7 @@ p {
     .notification-bar .right .battery-status {
       width: 5px;
       height: 8px;
-      margin-top: 4.5px;
+      margin-top: 5px;
       margin-left: 1px;
       float: right;
       opacity: 0.64; }
