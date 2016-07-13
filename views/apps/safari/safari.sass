@@ -1,7 +1,16 @@
+@import "../../../app/sass/config"
+
+$search_bar_height: 46px * $scale
+$safari_notification_bar_height: 38px * $scale
+
 .app.safari
+  height: $screen_height
+  background-color: #f8f8f8
   .notification-bar
-    background-color: #f8f8f8
+    // background-color: #f8f8f8
     color: black
+    height: $safari_notification_bar_height
+
     .center.time p, p
       color: black
     .right .battery
@@ -11,3 +20,18 @@
           background-color: black
       .block-small
         background-color: black
+
+  .search
+    width: 558px * $scale
+    margin: 0 auto
+    input
+      width: 100%
+      height: $search_bar_height
+      background-color: #e6e6e7
+      padding: 0
+      border: 0
+      border-radius: 8px * $scale
+      text-align: center
+
+  iframe
+    height: $screen_height - ($search_bar_height + $safari_notification_bar_height)

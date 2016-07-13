@@ -11,11 +11,9 @@
     };
 
     this.setLogo = function(logo) {
-      var style = null;
       if (logo) {
-        style = { 'background-image': 'url(' + logo + ')' };
+        return { 'background-image': 'url(' + logo + ')' };
       }
-      return style;
     }
   });
 
