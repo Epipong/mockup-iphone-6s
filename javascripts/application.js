@@ -9,6 +9,14 @@
       this.applications.push({name: app_name, logo: app_logo, notifications: 0,
         built_in: false});
     };
+
+    this.setLogo = function(logo) {
+      var style = null;
+      if (logo) {
+        style = { 'background-image': 'url(' + logo + ')' };
+      }
+      return style;
+    }
   });
 
   var shortcuts = [
@@ -34,7 +42,7 @@
       notifications: 0,
       built_in: true,
       icon: "views/icons/default.htm",
-      path: "",
+      path: "views/apps/safari/safari.htm",
     },
     {
       name: "Music",

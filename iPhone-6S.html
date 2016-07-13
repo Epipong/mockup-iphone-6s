@@ -5,10 +5,12 @@
   <title>iPhone 6S</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="frame-ancestors" content="*">
+  <meta http-equiv="frame-src" content="*">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src https:; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'">  -->
 
   <link href="stylesheets/style.css" rel="stylesheet">
-  <link href="views/icons/clock/clock.css" rel="stylesheet">
-  <link href="views/icons/calendar/calendar.css" rel="stylesheet">
 
   <script type="text/javascript" src="javascripts/angular.js"></script>
   <script type="text/javascript" src="javascripts/app.js"></script>
@@ -19,8 +21,14 @@
   <script type="text/javascript" src="javascripts/battery.js"></script>
   <script type="text/javascript" src="javascripts/calendar.js"></script>
 
+  <link href="views/icons/clock/clock.css" rel="stylesheet">
+  <link href="views/icons/calendar/calendar.css" rel="stylesheet">
+
+  <link href="views/apps/safari/safari.css" rel="stylesheet">
+  <script src="views/apps/safari/safari.js" type="text/javascript"></script>
+
   <link href="views/apps/calculator/calculator.css" rel="stylesheet">
-  <script type="text/javascript" src="views/apps/calculator/calculator.js"></script>
+  <script src="views/apps/calculator/calculator.js" type="text/javascript"></script>
 </head>
 
 <body>

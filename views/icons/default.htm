@@ -1,3 +1,3 @@
-<a ng-click="application.path && screen.setCurrentScreen(application.path);">
-  <div id="{{ application.name.toLowerCase() }}" class="icon" ng-style="application.logo && {'background-image': 'url({{ application.logo }})'}"></div>
+<a ng-click="screen.setCurrentScreen(application.path);" ng-style="screen.setCursor(application.path)">
+  <div id="{{ application.name.toLowerCase() }}" class="icon" ng-style="item.setLogo(application.logo)"></div>
 </a>

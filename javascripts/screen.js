@@ -7,7 +7,15 @@
     this.current = this.home;
 
     this.setCurrentScreen = function(path) {
-      this.current = path;
+      if (path) {
+        this.current = path;
+      }
+    }
+
+    this.setCursor = function(path) {
+      if (path) {
+        return { 'cursor': 'pointer' };
+      }
     }
   });
 })();

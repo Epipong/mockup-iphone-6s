@@ -1,0 +1,13 @@
+.app.safari .notification-bar {
+  background-color: #f8f8f8;
+  color: black; }
+  .app.safari .notification-bar .center.time p, .app.safari .notification-bar p {
+    color: black; }
+  .app.safari .notification-bar .right .battery .block-large {
+    border-color: black; }
+    .app.safari .notification-bar .right .battery .block-large .charge {
+      background-color: black; }
+  .app.safari .notification-bar .right .battery .block-small {
+    background-color: black; }
+
+/*# sourceMappingURL=safari.css.map */
