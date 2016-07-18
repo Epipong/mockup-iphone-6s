@@ -6,7 +6,9 @@
 <!-- Icons -->
 <div class="icons" ng-controller="ApplicationController as item">
   <div class="application" ng-repeat="application in item.applications">
-    <div ng-include="application.icon"></div>
+    <a ng-click="screen.setCurrentScreen(application.path);" ng-style="screen.setCursor(application.path)">
+      <div ng-include="item.setApplicationIcon(application.icon)"></div>
+    </a>
     <p>{{ application.name }}</p>
   </div>
 </div>
@@ -16,7 +18,9 @@
 <div class="shortcut" ng-controller="ApplicationController as item">
   <div class="blur"></div>
   <div class="application" ng-repeat="application in item.shortcuts">
-    <div ng-include="application.icon"></div>
+    <a ng-click="screen.setCurrentScreen(application.path);" ng-style="screen.setCursor(application.path)">
+      <div ng-include="item.setApplicationIcon(application.icon)"></div>
+    </a>
     <p>{{ application.name }}</p>
   </div>
 </div>

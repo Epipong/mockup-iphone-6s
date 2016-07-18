@@ -12,6 +12,9 @@ iframe {
   border: none;
   background-color: white; }
 
+.cursor {
+  cursor: pointer; }
+
 .calque {
   display: none;
   position: absolute;
