@@ -1,0 +1,10 @@
+<!-- Icons -->
+<div ng-class="current_class" ng-controller="ApplicationController as item">
+  <div class="application" ng-repeat="application in item.applications">
+    <a ng-click="screen.setCurrentScreen(application.path);" ng-style="screen.setCursor(application.path)">
+      <div ng-include="item.setApplicationIcon(application.icon)"></div>
+    </a>
+    <p>{{ application.name }}</p>
+  </div>
+</div>
+<!-- End of icons -->

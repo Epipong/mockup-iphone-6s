@@ -2,10 +2,14 @@
 
 $search_bar_height: 46px * $scale
 $safari_notification_bar_height: 38px * $scale
+$safari_header_height: 100px * $scale
 
 .app.safari
   height: $screen_height
   background-color: #f8f8f8
+  overflow: hidden
+  .header
+    height: $safari_header_height
   .notification-bar
     // background-color: #f8f8f8
     color: black
@@ -32,9 +36,11 @@ $safari_notification_bar_height: 38px * $scale
       border: 0
       border-radius: 8px * $scale
       text-align: center
+      font-size: 26px * $scale
     input:focus
       border: none
       outline: none
 
   iframe
-    height: $screen_height - ($search_bar_height + $safari_notification_bar_height)
+    height: $screen_height - $safari_header_height
+    border: 0

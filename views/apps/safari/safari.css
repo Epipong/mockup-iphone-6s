@@ -1,9 +1,12 @@
 .app.safari {
-  height: 522px;
-  background-color: #f8f8f8; }
+  height: 1044px;
+  background-color: #f8f8f8;
+  overflow: hidden; }
+  .app.safari .header {
+    height: 100px; }
   .app.safari .notification-bar {
     color: black;
-    height: 19px; }
+    height: 38px; }
     .app.safari .notification-bar .center.time p, .app.safari .notification-bar p {
       color: black; }
     .app.safari .notification-bar .right .battery .block-large {
@@ -13,20 +16,22 @@
     .app.safari .notification-bar .right .battery .block-small {
       background-color: black; }
   .app.safari .search {
-    width: 279px;
+    width: 558px;
     margin: 0 auto; }
     .app.safari .search input {
       width: 100%;
-      height: 23px;
+      height: 46px;
       background-color: #e6e6e7;
       padding: 0;
       border: 0;
-      border-radius: 4px;
-      text-align: center; }
+      border-radius: 8px;
+      text-align: center;
+      font-size: 26px; }
     .app.safari .search input:focus {
       border: none;
       outline: none; }
   .app.safari iframe {
-    height: 480px; }
+    height: 944px;
+    border: 0; }
 
 /*# sourceMappingURL=safari.css.map */

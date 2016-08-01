@@ -1,8 +1,10 @@
 <div class="app safari">
-  <div ng-init="background_color = 'black'" ng-include="'views/notification-bar.htm'"></div>
-  <div class="search">
-    <input type="text" name="url">
+  <div class="header">
+    <div ng-init="background_color = 'black'" ng-include="'views/notification-bar.htm'"></div>
+    <div class="search">
+      <input type="text" name="url" ng-model="url">
+    </div>
   </div>
-  <iframe src=""></iframe>
+  <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=statue%20of%20liberty&amp;key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
 </div>
 <div style="display:none;position:absolute;background-image:url('images/safari.png');top:0;left:0;width:100%;height:100%;background-size:contain;opacity:.3;"></div>
