@@ -1,9 +1,13 @@
 (function() {
   var app = angular.module('application', ['screen']);
 
-  app.controller('ApplicationController', function() {
+  app.controller('ApplicationController', function($scope) {
     this.applications = applications;
     this.shortcuts = shortcuts;
+    this.items = {
+      'icons': applications,
+      'shortcut': shortcuts
+    };
     var template_path = "views/icons/default.htm";
 
     this.addApplication = function(app_name, app_logo) {
@@ -19,6 +23,10 @@
 
     this.setApplicationIcon = function(icon) {
       return icon ? icon : template_path;
+    }
+
+    this.getItems = function(object) {
+      return this.items[object];
     }
   });
 

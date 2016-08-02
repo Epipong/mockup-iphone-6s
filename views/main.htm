@@ -1,21 +1,5 @@
 <div class="screen main">
-<!-- Notification bar -->
-<div ng-include="'views/notification-bar.htm'"></div>
-<!-- End of notification bar -->
-
-<!-- Icons -->
-<div ng-init="current_class = 'icons'" ng-include="'views/icon.htm'"></div>
-<!-- End of icons -->
-
-<!-- Shortcut icon -->
-<div class="shortcut" ng-controller="ApplicationController as item">
-  <div class="blur"></div>
-  <div class="application" ng-repeat="application in item.shortcuts">
-    <a ng-click="screen.setCurrentScreen(application.path);" ng-style="screen.setCursor(application.path)">
-      <div ng-include="item.setApplicationIcon(application.icon)"></div>
-    </a>
-    <p>{{ application.name }}</p>
-  </div>
-</div>
-<!-- End of shortcut icon -->
+  <div ng-include="'views/notification-bar.htm'"></div>
+  <div ng-controller="ApplicationController as item" ng-init="current_class = 'icons'" ng-include="'views/icon.htm'"></div>
+  <div ng-controller="ApplicationController as item" ng-init="current_class = 'shortcut'" ng-include="'views/icon.htm'"></div>
 </div>
