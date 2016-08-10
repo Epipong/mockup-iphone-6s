@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="phone">
+<html data-ng-app="phone">
 <head>
   <meta charset="utf-8">
   <title>iPhone 6S</title>
@@ -25,17 +25,17 @@
 
 <body>
   <div class="phone-border">
-    <div class="phone" ng-controller="ScreenController as screen">
+    <div class="phone" data-ng-controller="ScreenController as screen">
       <div class="camera front"></div>
       <div class="speaker"></div>
 
       <!-- Screen render -->
-      <div class="screen" ng-include="screen.current"></div>
+      <div class="screen" data-ng-include="screen.current"></div>
       <!-- End of screen render -->
 
       <!-- Home button -->
       <div class="main-button">
-        <a ng-click="screen.setCurrentScreen('views/main.htm');"><div class="touch-id"></div></a>
+        <a data-ng-click="screen.setCurrentScreen('views/main.htm');"><div class="touch-id"></div></a>
       </div>
       <!-- End of home button -->
     </div>

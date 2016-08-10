@@ -1,12 +1,12 @@
 <div class="notification-bar">
-  <div class="left" ng-controller="NetworkController">
-    
+  <div class="left" data-ng-controller="NetworkController">
+
   </div>
-  <div class="center time" ng-controller="TimeController as time">
+  <div class="center time" data-ng-controller="TimeController as time">
     <p current-time="format"></p>
   </div>
-  <div class="right" ng-controller="BatteryController">
-    <img class="battery-status" ng-show="status" ng-src="{{ status_image }}">
+  <div class="right" data-ng-controller="BatteryController">
+    <img class="battery-status" data-ng-show="status" data-ng-src="{{ status_image }}">
     <div class="battery">
       <div class="block-large">
         <div class="charge" style="width: {{ level }}%; background-color: {{ background_color }}"></div>
