@@ -1,22 +1,22 @@
 <div class="screen main">
 <!-- Notification bar -->
-<div ng-include="'views/notification-bar.htm'"></div>
+<div data-ng-include="'views/notification-bar.htm'"></div>
 <!-- End of notification bar -->
 
 <!-- Icons -->
-<div class="icons" ng-controller="ApplicationController as item">
-  <div class="application" ng-repeat="application in item.applications">
-    <div ng-include="application.icon"></div>
+<div class="icons" data-ng-controller="ApplicationController as item">
+  <div class="application" data-ng-repeat="application in item.applications">
+    <div data-ng-include="application.icon"></div>
     <p>{{ application.name }}</p>
   </div>
 </div>
 <!-- End of icons -->
 
 <!-- Shortcut icon -->
-<div class="shortcut" ng-controller="ApplicationController as item">
+<div class="shortcut" data-ng-controller="ApplicationController as item">
   <div class="blur"></div>
-  <div class="application" ng-repeat="application in item.shortcuts">
-    <div ng-include="application.icon"></div>
+  <div class="application" data-ng-repeat="application in item.shortcuts">
+    <div data-ng-include="application.icon"></div>
     <p>{{ application.name }}</p>
   </div>
 </div>
