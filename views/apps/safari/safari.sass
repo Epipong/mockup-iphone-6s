@@ -3,6 +3,7 @@
 $search_bar_height: 46px * $scale
 $safari_notification_bar_height: 38px * $scale
 $safari_header_height: 100px * $scale
+$safari_footer_height: 69px * $scale
 
 .app.safari
   height: $screen_height
@@ -24,6 +25,13 @@ $safari_header_height: 100px * $scale
           background-color: black
       .block-small
         background-color: black
+  .footer
+    height: $safari_footer_height
+    .button
+      width: 20%
+      height: 100%
+      float: left
+      background-color: red
 
   .search
     width: 558px * $scale
@@ -42,5 +50,5 @@ $safari_header_height: 100px * $scale
       outline: none
 
   iframe
-    height: $screen_height - $safari_header_height
+    height: $screen_height - $safari_header_height - $safari_footer_height
     border: 0
