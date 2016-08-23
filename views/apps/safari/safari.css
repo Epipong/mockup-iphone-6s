@@ -26,8 +26,26 @@
     .app.safari .footer .button {
       width: 117.6px;
       height: 100%;
-      float: left;
-      background-color: blue; }
+      float: left; }
+      .app.safari .footer .button.previous img, .app.safari .footer .button.next img {
+        height: 28px;
+        margin-top: 20px; }
+      .app.safari .footer .button.previous img {
+        margin-left: 26.5px; }
+      .app.safari .footer .button.next img {
+        margin-left: 41px; }
+      .app.safari .footer .button.share img {
+        height: 41px;
+        margin-top: 12px;
+        margin-left: 42.5px; }
+      .app.safari .footer .button.bookmark img {
+        height: 37px;
+        margin-top: 16px;
+        margin-left: 46.5px; }
+      .app.safari .footer .button.tab img {
+        height: 39px;
+        margin-top: 15px;
+        margin-left: 52px; }
   .app.safari .search {
     width: 558px;
     margin: 0 auto; }

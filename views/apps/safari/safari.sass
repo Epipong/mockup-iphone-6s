@@ -37,7 +37,29 @@ $safari_footer_height: 69px * $scale
       width: $screen_width / 5
       height: 100%
       float: left
-      background-color: blue
+
+      &.previous img, &.next img
+        height: 28px * $scale
+        margin-top: 20px * $scale
+      &.previous img
+        margin-left: 26.5px * $scale
+      &.next img
+        margin-left: 41px * $scale
+
+      &.share img
+        height: 41px * $scale
+        margin-top: 12px * $scale
+        margin-left: 42.5px * $scale
+
+      &.bookmark img
+        height: 37px * $scale
+        margin-top: 16px * $scale
+        margin-left: 46.5px * $scale
+
+      &.tab img
+        height: 39px * $scale
+        margin-top: 15px * $scale
+        margin-left: 52px * $scale
 
   .search
     width: 558px * $scale
