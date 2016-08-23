@@ -6,7 +6,9 @@ $safari_header_height: 100px * $scale
 $safari_footer_height: 69px * $scale
 
 .app.safari
+  width: $screen_width
   height: $screen_height
+  position: relative
   background-color: #f8f8f8
   overflow: hidden
   .header
@@ -26,12 +28,16 @@ $safari_footer_height: 69px * $scale
       .block-small
         background-color: black
   .footer
+    width: $screen_width
     height: $safari_footer_height
+    position: absolute
+    bottom: 0
+    left: 0
     .button
-      width: 20%
+      width: $screen_width / 5
       height: 100%
       float: left
-      background-color: red
+      background-color: blue
 
   .search
     width: 558px * $scale

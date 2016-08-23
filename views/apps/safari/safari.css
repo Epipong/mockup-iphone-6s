@@ -1,5 +1,7 @@
 .app.safari {
+  width: 588px;
   height: 1044px;
+  position: relative;
   background-color: #f8f8f8;
   overflow: hidden; }
   .app.safari .header {
@@ -16,12 +18,16 @@
     .app.safari .notification-bar .right .battery .block-small {
       background-color: black; }
   .app.safari .footer {
-    height: 69px; }
+    width: 588px;
+    height: 69px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
     .app.safari .footer .button {
-      width: 20%;
+      width: 117.6px;
       height: 100%;
       float: left;
-      background-color: red; }
+      background-color: blue; }
   .app.safari .search {
     width: 558px;
     margin: 0 auto; }
