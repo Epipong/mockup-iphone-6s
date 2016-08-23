@@ -25,10 +25,10 @@
     // Show the numbers on display
     this.getNum = function(num) {
       if (button.includes('.') && num.includes('.')) {
-        console.log('no');
         return ;
       }
       button += num;
+      console.log(num);
       this.display = button;
 
       if (operatorSelected == true) {
