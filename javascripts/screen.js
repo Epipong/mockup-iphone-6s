@@ -2,8 +2,7 @@
   var app = angular.module('screen', []);
 
   app.controller('ScreenController', function() {
-    this.home = "views/apps/safari/safari.htm";
-    // this.home = "views/main.htm";
+    this.home = "views/main.htm";
 
     this.current = this.home;
 
