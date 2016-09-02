@@ -9,18 +9,18 @@
 
 .calendar div.weekday {
   color: #ff2d55;
-  font-size: 9px;
+  font-size: 18px;
   margin: 0 auto;
   text-align: center;
-  line-height: 19px;
+  line-height: 38px;
   font-family: "Helvetica Neue";
   font-weight: bold; }
 .calendar div.day {
   color: black;
-  font-size: 32px;
+  font-size: 64px;
   margin: 0 auto;
   text-align: center;
-  line-height: 19px;
+  line-height: 38px;
   font-family: "Helvetica Neue";
   font-weight: lighter; }
 

@@ -1,0 +1,68 @@
+.app.safari {
+  width: 588px;
+  height: 1044px;
+  position: relative;
+  background-color: #f8f8f8;
+  overflow: hidden; }
+  .app.safari .header {
+    height: 100px; }
+  .app.safari .notification-bar {
+    color: black;
+    height: 38px; }
+    .app.safari .notification-bar .center.time p, .app.safari .notification-bar p {
+      color: black; }
+    .app.safari .notification-bar .right .battery .block-large {
+      border-color: black; }
+      .app.safari .notification-bar .right .battery .block-large .charge {
+        background-color: black; }
+    .app.safari .notification-bar .right .battery .block-small {
+      background-color: black; }
+  .app.safari .footer {
+    width: 588px;
+    height: 69px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .app.safari .footer .button {
+      width: 117.6px;
+      height: 100%;
+      float: left; }
+      .app.safari .footer .button.previous img, .app.safari .footer .button.next img {
+        height: 28px;
+        margin-top: 20px; }
+      .app.safari .footer .button.previous img {
+        margin-left: 26.5px; }
+      .app.safari .footer .button.next img {
+        margin-left: 41px; }
+      .app.safari .footer .button.share img {
+        height: 41px;
+        margin-top: 12px;
+        margin-left: 42.5px; }
+      .app.safari .footer .button.bookmark img {
+        height: 37px;
+        margin-top: 16px;
+        margin-left: 46.5px; }
+      .app.safari .footer .button.tab img {
+        height: 39px;
+        margin-top: 15px;
+        margin-left: 52px; }
+  .app.safari .search {
+    width: 558px;
+    margin: 0 auto; }
+    .app.safari .search input {
+      width: 100%;
+      height: 46px;
+      background-color: #e6e6e7;
+      padding: 0;
+      border: 0;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 26px; }
+    .app.safari .search input:focus {
+      border: none;
+      outline: none; }
+  .app.safari iframe {
+    height: 875px;
+    border: 0; }
+
+/*# sourceMappingURL=safari.css.map */

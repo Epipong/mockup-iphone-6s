@@ -1,0 +1,17 @@
+<div class="app safari" data-ng-controller="SafariController as safari">
+  <div class="header">
+    <div data-ng-init="background_color = 'black'" data-ng-include="'views/notification-bar.htm'"></div>
+    <div class="search">
+      <input type="text" name="url" data-ng-model="safari.url">
+    </div>
+  </div>
+  <iframe frameborder="0" data-ng-src="{{ trustUrl(safari.url) }}"></iframe>
+  <div class="footer">
+    <div class="button previous"><a class="cursor"><img src="images/ios-previous.png"/></a></div>
+    <div class="button next"><a class="cursor"><img src="images/ios-next.png"/></a></div>
+    <div class="button share"><a class="cursor"><img src="images/ios-share.png"/></a></div>
+    <div class="button bookmark"><a class="cursor"><img src="images/ios-bookmark.png"/></a></div>
+    <div class="button tab"><a class="cursor"><img src="images/ios-tab.png"/></a></div>
+  </div>
+</div>
+<div style="display:none;position:absolute;background-image:url('images/safari.png');top:0;left:0;width:100%;height:100%;background-size:contain;opacity:.3;"></div>

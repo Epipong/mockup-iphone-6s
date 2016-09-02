@@ -7,7 +7,7 @@
     $scope.level;
     $scope.status;
     $scope.status_image = "images/status_charge.png";
-    $scope.background_color = "#ffffff";
+    $scope.background_color = $scope.background_color ? $scope.background_color : "white";
 
     var setBatteryLevel = function(level, callback) {
       if (level !== NOT_APPLICABLE) {

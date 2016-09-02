@@ -5,3 +5,4 @@ sass views/icons/clock/clock.sass views/icons/clock/clock.css
 sass views/icons/calendar/calendar.sass views/icons/calendar/calendar.css
 
 sass views/apps/calculator/calculator.sass views/apps/calculator/calculator.css
+sass views/apps/safari/safari.sass views/apps/safari/safari.css

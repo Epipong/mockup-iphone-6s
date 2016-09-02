@@ -36,7 +36,7 @@ $icon_border_radius: 22px * $scale
 $icon_label_font_size: 19px * $scale
 $icon_label_margin: 4px 0 * $scale
 
-$time_line_height: 30px * $scale
+$time_line_height: 32px * $scale
 
 $battery_width: 36px * $scale
 $battery_height: 12px * $scale
@@ -50,11 +50,20 @@ $battery_block_small_border_with: 1px * $scale
 
 body
   font-family: Helvetica
+  font-size: $font_size_default
   margin: 0
 
 p
   margin: 0
-  opacity: $opacity_default
+  // opacity: $opacity_default
+
+iframe
+  width: $screen_width
+  border: none
+  background-color: white
+
+.cursor
+  cursor: pointer
 
 .calque
   display: none
@@ -174,7 +183,7 @@ p
     .battery-status
       width: 10px * $scale
       height: 16px * $scale
-      margin-top: 10px * $scale
+      margin-top: 9px * $scale
       margin-left: 2px * $scale
       float: right
       opacity: $opacity_default

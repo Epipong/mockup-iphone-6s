@@ -1,0 +1,82 @@
+@import "../../../app/sass/config"
+
+$search_bar_height: 46px * $scale
+$safari_notification_bar_height: 38px * $scale
+$safari_header_height: 100px * $scale
+$safari_footer_height: 69px * $scale
+
+.app.safari
+  width: $screen_width
+  height: $screen_height
+  position: relative
+  background-color: #f8f8f8
+  overflow: hidden
+  .header
+    height: $safari_header_height
+  .notification-bar
+    // background-color: #f8f8f8
+    color: black
+    height: $safari_notification_bar_height
+
+    .center.time p, p
+      color: black
+    .right .battery
+      .block-large
+        border-color: black
+        .charge
+          background-color: black
+      .block-small
+        background-color: black
+  .footer
+    width: $screen_width
+    height: $safari_footer_height
+    position: absolute
+    bottom: 0
+    left: 0
+    .button
+      width: $screen_width / 5
+      height: 100%
+      float: left
+
+      &.previous img, &.next img
+        height: 28px * $scale
+        margin-top: 20px * $scale
+      &.previous img
+        margin-left: 26.5px * $scale
+      &.next img
+        margin-left: 41px * $scale
+
+      &.share img
+        height: 41px * $scale
+        margin-top: 12px * $scale
+        margin-left: 42.5px * $scale
+
+      &.bookmark img
+        height: 37px * $scale
+        margin-top: 16px * $scale
+        margin-left: 46.5px * $scale
+
+      &.tab img
+        height: 39px * $scale
+        margin-top: 15px * $scale
+        margin-left: 52px * $scale
+
+  .search
+    width: 558px * $scale
+    margin: 0 auto
+    input
+      width: 100%
+      height: $search_bar_height
+      background-color: #e6e6e7
+      padding: 0
+      border: 0
+      border-radius: 8px * $scale
+      text-align: center
+      font-size: 26px * $scale
+    input:focus
+      border: none
+      outline: none
+
+  iframe
+    height: $screen_height - $safari_header_height - $safari_footer_height
+    border: 0
