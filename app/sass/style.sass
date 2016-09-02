@@ -1,4 +1,7 @@
 @import "config"
+@font-face
+  font-family: 'Roboto Thin'
+  src: url('../../../fonts/roboto/Roboto-Thin.ttf') format('truetype')
 
 $phone_width: 671px * $scale
 $phone_height: 1383px * $scale
@@ -49,13 +52,12 @@ $battery_block_small_margin_top: 3px * $scale
 $battery_block_small_border_with: 1px * $scale
 
 body
-  font-family: Helvetica
+  font-family: 'Roboto Thin', Helvetica
   font-size: $font_size_default
   margin: 0
 
 p
   margin: 0
-  // opacity: $opacity_default
 
 iframe
   width: $screen_width
@@ -160,7 +162,6 @@ iframe
     .battery
       height: $battery_height
       margin-top: $battery_margin_top
-      // margin-right: $battery_margin_right
       float: right
       opacity: $opacity_default
       .block-large
@@ -203,11 +204,6 @@ iframe
   overflow: hidden
   display: block
   background-color: #444444
-  // -webkit-filter: blur(16px)
-  // -moz-filter: blur(16px)
-  // -o-filter: blur(16px)
-  // -ms-filter: blur(16px)
-  // filter: blur(16px)
   opacity: 0.75
 
 .main-button
