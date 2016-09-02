@@ -28,6 +28,10 @@
     this.getItems = function(object) {
       return this.items[object];
     }
+
+    this.hasBlur = function(object) {
+      return (object == 'shortcut' ? 'blur' : '');
+    }
   });
 
   var shortcuts = [

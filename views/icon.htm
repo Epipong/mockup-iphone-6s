@@ -1,8 +1,9 @@
 <!-- Icons -->
-<div ng-class="current_class">
-  <div class="application" ng-repeat="application in item.getItems(current_class)">
-    <a ng-click="screen.setCurrentScreen(application.path)" ng-style="screen.setCursor(application.path)">
-      <div ng-include="item.setApplicationIcon(application.icon)"></div>
+<div data-ng-class="current_class">
+  <div data-ng-show="current_class == 'shortcut'" data-ng-class="item.hasBlur(current_class)"></div>
+  <div class="application" data-ng-repeat="application in item.getItems(current_class)">
+    <a data-ng-click="screen.setCurrentScreen(application.path)" data-ng-style="screen.setCursor(application.path)">
+      <div data-ng-include="item.setApplicationIcon(application.icon)"></div>
     </a>
     <p>{{ application.name }}</p>
   </div>
